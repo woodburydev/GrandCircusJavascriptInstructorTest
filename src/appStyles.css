@@ -1,0 +1,55 @@
+/* set global styles to have no built in margin or padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.HeaderContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  background-color: #eeecee;
+}
+
+.HeaderContainer :nth-child(1) {
+  color: #1b7600;
+  margin-left: 20px;
+}
+
+.FormContainer {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.ResultsContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.CityNotFoundContainer {
+  margin-top: 20px;
+}
+
+.ResultsHeader {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+}
+
+.ResultsContainer p {
+  margin-top: 10px;
+}
