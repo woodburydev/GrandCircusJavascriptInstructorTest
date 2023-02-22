@@ -48,7 +48,7 @@ export const getWeatherByCity = async (
   const matchedResult = arrayOfResults[0];
 
   // if not a "Municipality" from TomTom, we cannot verify that it is a city.
-  if (!matchedResult || matchedResult?.entityType !== "Municipality") {
+  if (!matchedResult || matchedResult.entityType !== "Municipality") {
     return {
       cityName: "not-found",
       description: "",
@@ -59,8 +59,8 @@ export const getWeatherByCity = async (
     };
   }
 
-  const { lat, lon } = matchedResult.position;
   const {
+    position: { lat, lon },
     address: { municipality },
   } = matchedResult;
 
